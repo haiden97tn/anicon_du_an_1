@@ -1,0 +1,14 @@
+{
+    
+    "Customer": {
+      "dbConfig": {
+        "host": "localhost",
+        "port": 4000,
+        "dbName": "anicon"
+      },
+      "credit": {
+        "initialLimit": 100,
+        "initialDays": 1
+      }
+    }
+  }

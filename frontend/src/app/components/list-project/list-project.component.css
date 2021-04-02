@@ -1,0 +1,72 @@
+.logo{
+  display: flex;
+}
+.listNav ul{
+  display: flex;
+  list-style-type: none;
+  height: 81px;
+  line-height: 81px;
+}
+.listNav ul a{
+  text-decoration: none;
+  color: black;
+}
+.listNav ul a:hover{
+  color: chartreuse;
+}
+.listNav ul li{
+  padding-left: 15px;
+}
+.taithem button{
+  display: inline-block;
+  width: 200px;
+}
+.taithem{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.footer{
+  background-color: #48c61c;
+  text-align: center;
+}
+.footer ul {
+  display: flex;
+  list-style-type: none;
+  height: 40px;
+  line-height: 40px;
+}
+.chungchi{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: inline-flex;
+  width: 90%;
+}
+.chungchi ul li{
+  padding-left: 5px;
+  color: white;
+}
+.danhmuc ul li a{
+  text-decoration: none;
+  color: white;
+}
+.danhmuc {
+  background-color: #48c61c;
+
+}
+.danhmuccon {
+  background-color: #48c61c;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.danhmuc ul{
+  list-style-type: none;
+}
+.navcuoi p{
+  height: 65px;
+  line-height: 65px;
+}
+.navcuoi img{
+  margin-left: 15%;
+}

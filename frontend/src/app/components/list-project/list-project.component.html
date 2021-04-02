@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="content">
+        <h2>Dự án</h2>
+        <p>Khám phá tu duy thiết kế và triết lý sáng tạo được chúng tôi gửi gắm trong từng dự án</p>
+        <div class="row pb-3 pt-3" >
+            <div class="col-6 " *ngFor="let cate of categories">
+                <a href="javascript:;" routerLink="detail/{{cate._id}}" ><img class="w-100" src="{{cate.image}}" alt=""></a>
+                <b>{{cate.name}}</b>
+                <p>{{cate.content}}</p>
+            </div>
+        </div>
+        <div class="row taithem">
+            <div class="col"><button type="button" class="btn btn-secondary">Tải thêm</button></div>
+        </div>
+    </div>
+</div>
+
+
+
