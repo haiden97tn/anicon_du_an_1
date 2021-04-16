@@ -10,17 +10,16 @@ import { CategoryService } from 'src/app/services/category.service';
 export class DetailProjectComponent implements OnInit {
 
   categoryId: string;
-  category: null;
+  category: any;
 
   constructor(private route: ActivatedRoute, private categoryService: CategoryService) { }
 
   async ngOnInit() {
-    await this.route.params.subscribe(params => {
+    this.route.params.subscribe(params => {
       this.categoryId = params['xxx'];
     });
-    await this.categoryService.findById(this.categoryId).subscribe(data => {
-      this.category = data
-      console.log(data)
+    this.categoryService.findById(this.categoryId).subscribe(data => {
+      this.category = data.data.ListData[0];
     })
   }
 

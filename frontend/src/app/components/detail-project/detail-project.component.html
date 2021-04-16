@@ -1,13 +1,14 @@
 <div class="container">
- <div class="content" *ngIf="category != null">
-     <h3>{{category.name}}</h3>
-     <p>{{category.content}}</p>
-     <img src="{{category.image}}" alt="">
-     
-     <p>{{category.description}}</p>
-     <div class="row pb-lg-5">
-         <div class="col-6"><img class="w-100" src="https://firebasestorage.googleapis.com/v0/b/shop-a306f.appspot.com/o/anicon%2F190914_San%2BPham%2B-%2BTrang%2BChu%2B-%2BContent%2B12%2B-%2Blangfarm%2C%2Bdac%2Bsan%2Bda%2Blat%2C%2Bhat%201.png?alt=media&token=ec6195fa-0f1d-4857-be33-a8ab6860554d" alt=""></div>
-         <div class="col-6"><img class="w-100" src="https://firebasestorage.googleapis.com/v0/b/shop-a306f.appspot.com/o/anicon%2Fthiet-ke-noi-that-nha-hang-l'angfarm-buffet-sai-gon-lav-design-office-18%201%20(1).png?alt=media&token=0f16585d-a609-4e1c-a891-7d191fca0254" alt=""></div>
-     </div>
- </div>
+  <div class="content" *ngIf="category != null">
+    <h3>{{category.Name}}</h3>
+    <!-- <p>{{category.content}}</p> -->
+    <!-- <img src="{{category.image}}" alt=""> -->
+
+    <p>{{category.Description}}</p>
+    <div class="row pb-lg-5">
+      <div *ngFor="let catex of category.ImgNames" class="col-6">
+        <div><img class="w-100" src="{{catex.url}}" alt=""></div>
+      </div>
+    </div>
+  </div>
 </div>

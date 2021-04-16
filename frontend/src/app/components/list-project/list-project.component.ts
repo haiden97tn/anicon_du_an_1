@@ -12,13 +12,11 @@ export class ListProjectComponent implements OnInit {
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit(): void {
+
     this.categoryService.getAll().subscribe(data => {
-      this.categories = data;
+      this.categories = data.data.ListData;
       console.log(this.categories)
     })
 
   }
-
-
-
 }
