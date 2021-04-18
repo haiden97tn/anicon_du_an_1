@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://anicon.asia/v1'
+  apiUrl: 'https://connect.anicon.asia/v1'
 };

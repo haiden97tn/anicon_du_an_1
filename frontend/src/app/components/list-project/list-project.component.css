@@ -70,3 +70,30 @@
 .navcuoi img{
   margin-left: 15%;
 }
+.content{
+  text-align: center;
+}
+.content img{
+  width: 55%;
+  margin-left: 10%;
+}
+/* .content1 p{
+  width: 80%;
+  margin-left: 10%;
+  text-align:left;
+  display: block;
+} */
+.content1 b{
+  width: 80%;
+  display: block;
+  margin-left: 10%;
+
+}
+.content1 p{
+  font-weight: 300;
+  font-size: 100%;
+  width: 80%;
+  display: block;
+  margin-left: 10%;
+
+}

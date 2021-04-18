@@ -1,13 +1,29 @@
 <div class="container">
-  <div class="content" *ngIf="category != null">
+  <div class="content " *ngIf="category != null">
     <h3>{{category.Name}}</h3>
     <!-- <p>{{category.content}}</p> -->
     <!-- <img src="{{category.image}}" alt=""> -->
 
     <p>{{category.Description}}</p>
-    <div class="row pb-lg-5">
+    <div class="row pb-lg-5 " >
       <div *ngFor="let catex of category.ImgNames" class="col-6">
-        <div><img class="w-100" src="{{catex.url}}" alt=""></div>
+        <div>
+          <b>{{catex.Name}}</b>
+
+          <iframe class="video"
+                  src="https://www.youtube.com/embed/{{YoutubeLink}}"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
+          <div>{{YoutubeLink}}</div>
+
+          <br>
+          <p>{{category.Description}}</p>
+          <img class="w-100" src="{{catex.url}}" alt="">
+
+        </div>
       </div>
     </div>
   </div>

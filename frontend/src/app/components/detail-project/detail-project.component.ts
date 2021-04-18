@@ -11,6 +11,7 @@ export class DetailProjectComponent implements OnInit {
 
   categoryId: string;
   category: any;
+  YoutubeLink: string = '';
 
   constructor(private route: ActivatedRoute, private categoryService: CategoryService) { }
 
@@ -20,6 +21,8 @@ export class DetailProjectComponent implements OnInit {
     });
     this.categoryService.findById(this.categoryId).subscribe(data => {
       this.category = data.data.ListData[0];
+      this.YoutubeLink = (this.category.YoutubeLink).slice(32)
+      // console.log(this.YoutubeLink)
     })
   }
 
