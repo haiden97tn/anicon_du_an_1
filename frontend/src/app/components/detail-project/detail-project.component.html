@@ -6,22 +6,25 @@
 
     <p>{{category.Description}}</p>
     <div class="row pb-lg-5 " >
-      <div *ngFor="let catex of category.ImgNames" class="col-6">
+      <div *ngFor="let catex of category.ImgNames" class="">
         <div>
           <b>{{catex.Name}}</b>
 
-          <iframe class="video"
-                  src="https://www.youtube.com/embed/{{YoutubeLink}}"
+          <iframe *ngIf="safeUrl"
+                  class="video"
+                  [src]="safeUrl"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
           </iframe>
-          <div>{{YoutubeLink}}</div>
-
+          <!-- <iframe width="560" height="315" [src]="safeUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div>{{getLink()}}</div> -->
           <br>
           <p>{{category.Description}}</p>
-          <img class="w-100" src="{{catex.url}}" alt="">
+          <div class="col-6">
+            <img class="w-75" src="{{catex.url}}" alt="">
+          </div>
 
         </div>
       </div>
